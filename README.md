@@ -23,7 +23,9 @@ I will design and make a text based game for Mr. Ruben Pinzon. The game will be 
 1. The game has to be entirely text-based.
 2. The game must record the time played.
 3. The game must record the player name and score.
-4. Run with at least the "perfect triangle" of elements. (Fire, Water, Grass)//todo need two more
+4. Run with at least the "perfect triangle" of elements and choice of what element to play as. (Fire, Water, Grass)
+5. CPU integration
+6. 2 different levels of CPU difficulty
 
 # Criteria B: Design
 
