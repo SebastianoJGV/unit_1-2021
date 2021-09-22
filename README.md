@@ -15,6 +15,8 @@ Apart for this requirements, the owner is open to any type of game, topic or gen
 
 ## Proposed Solution
 
+I am going to create a Pokemon based text game, this will allow you to play against a freind on the same PC or against a CPU using the 3 base pokemon types of fire, water, and grass.
+
 ## Success Criteria
 
 
