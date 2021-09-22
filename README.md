@@ -32,8 +32,10 @@ I will design and make a text based game for Mr. Ruben Pinzon. The game will be 
 ## System Diagram
 
 ## UML Diagram
-![](export_canvas_cpu-command-selection-210922_2204.png)
+
 ## Flow Diagrams
+CPU Turn Function Flow Diagram
+![](export_canvas_cpu-command-selection-210922_2204.png)
 
 ## Record of Tasks
 | Task No | Planned Action | Planned Outcome | Time estimate | Target completion date | Criterion |
