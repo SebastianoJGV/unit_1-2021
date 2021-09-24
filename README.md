@@ -31,7 +31,7 @@ I will design and make a text based game for Mr. Ruben Pinzon. The game will be 
 
 ## System Diagram
 
-![](System Diagram.png)
+![](System_Diagram.png)
 
 **Figure 1.** System Diagram for proposed text game
 
