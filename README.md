@@ -49,6 +49,6 @@ Fig. 2 is a flow diagram depicting the method behind the cpu automatically choos
 ## Record of Tasks
 | Task No | Planned Action | Planned Outcome | Time estimate | Target completion date | Criterion |
 |---------|----------------|-----------------|---------------|------------------------|-----------|
-|         |                |                 |               |                        |           |
+|    1    | write out first system diagram, start second flowchart|Upload first system diagram|30 mins|September 24th|None|
 |         |                |                 |               |                        |           |
 |         |                |                 |               |                        |           |
