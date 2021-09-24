@@ -30,7 +30,7 @@ I will design and make a text based game for Mr. Ruben Pinzon. The game will be 
 # Criteria B: Design
 
 ## System Diagram
-![](System Diagram.pdf)
+![](System Diagram.png)
 Figure 1. System Diagram for proposed text game
 
 As shown in Fig. 1, the solution will run on python and is developed using the Eclipse IDE. The code it designed on windows but can run on a mac computer with python 3.0 installed as well.
