@@ -6,7 +6,13 @@
 import time
 import sys
 import random
+from PokemonGame import pokeLibrary
 
+
+
+winner = 0
+p1score=0
+p2score=0
 #import playsound
 #playsound('audio.mp3')
 #Variable with start time
@@ -97,10 +103,12 @@ class player:
                 }           
 
 
+#CPU turn calculation, check element and randomize to select attack
 def cpu_turn():
-    delay_print("It is the CPU's turn!")
-    rand_choice = random.randint(0, 2)
+    delay_print("It is the CPU's turn! It has " + str(player2.hp) + " left. ")
+    rand_choice = random.randint(0, 2)#random number used for move calculation
     cpu_command = " "
+    #Check Element, randomize between the 3 moves in each element
     if player2.element == "fire":
         if rand_choice == 0:
             cpu_command = "ember"
@@ -108,6 +116,7 @@ def cpu_turn():
             cpu_command = "fire punch"
         elif rand_choice == 2:
             cpu_command = "inferno"
+            
     elif player2.element == "grass":
         if rand_choice == 0:
             cpu_command = "vine whip"
@@ -115,6 +124,7 @@ def cpu_turn():
             cpu_command = "razor leaf"
         elif rand_choice == 2:
             cpu_command = "petal dance"
+            
     else:
         if rand_choice == 0:
             cpu_command = "bubble"
@@ -122,34 +132,38 @@ def cpu_turn():
             cpu_command = "bubble beam"
         elif rand_choice == 2:
             cpu_command = "hydro pump"
+    
+    #player 2 in this context is the CPU, as the player is p1. 
+    #This is a copy and paste of player 2 with strings changed        
     if player2.moves[cpu_command] > 0:
         miss_chance = random. randint(0, player2.accuracy.get(cpu_command))
         if miss_chance != 1:
             delay_print(str(player2.name)+" uses " + str(cpu_command)+" against "+str(player1.name)+ ". ")
+            #if its super effective to 1.5x damage
             if player1.element == player2.strong:
                 delay_print(str(cpu_command) + " is super effective! ")
                 attack_power = round(player2.move_power.get(cpu_command)*1.5)
                 delay_print(str(player1.name) + " takes " + str(attack_power) + " damage! \n")
                 player1.hp -= attack_power
-#                    
+#           #if its not very effective do 0.5x damage         
             elif player1.element == player2.weakness:
                 delay_print(". It is not very effective...")
                 attack_power = round(player2.move_power.get(cpu_command)*0.5)
                 delay_print(str(player1.name) + " takes " + str(attack_power) + " damage... \n")
                 player1.hp -= attack_power
-#                    
+#           # else just do normal damage         
             else:
                 attack_power = player2.move_power.get(cpu_command)
                 delay_print(str(player1.name) + " takes " + str(attack_power) + " damage! \n")
                 player1.hp -= attack_power
             #decrease pp by 1 
-             
+            player2.moves[cpu_command] -= 1 
         else:
             delay_print("the attack missed! \n")
             player2.moves[cpu_command] -= 1
            
     else:
-         delay_print("You do not have any PP left. \n")   
+        delay_print("You do not have any PP left. \n")   
 
     
 
@@ -161,6 +175,7 @@ def battle():
         if player2.hp <= 0:
             delay_print(str(player2.name) + " fainted...")
             delay_print(str(player1.name) + " is the winner! \n")
+            winner=player1.name
             break
         
         if game_type == "pvp":
@@ -172,6 +187,7 @@ def battle():
         if player1.hp <= 0:
             delay_print(str(player1.name) + " fainted...")
             delay_print(str(player2.name) + " is the winner! \n")
+            winner=player2.name
             break
  
 
@@ -307,7 +323,35 @@ while True:
                                   
     battle()
     end_time = time.ctime()
+    if winner == player1.name:
+        p1score += 1
+    elif winner == player2.name:
+        p2score += 1 
+        
+    exist = True    
+    with open ("database.txt", "w") as files:
+        line = f"{player1}, {p1score}, {p2score}"
+        files.write(line)
+    
+    #read database. r makes it read only
+        with open("database.txt", "r") as files:
+            for player in files.readlines():
+                name_stored, score_stored, score2 = player.split(',')
+                print(f"User {player1} loaded")
+                if name_stored == player1:
+                    score = score_stored
+                    score2 = score2
+                    print(f"score is {score_stored} : {score2} points")
+                    exist= True
+                    break
+            
+    if exist == False:        
+        print("player not found")    
+    
     delay_print("Match went from " + str(start_time) + " to " + str(end_time) + " \n")
+    delay_print(str(player1.name)+" : " + str(p1score)+ "\n")
+    delay_print(str(player2.name)+" : " + str(p2score)+ "\n")
+    
     yn = input("Do you want to play again? y/n")
     if yn[0] == "n":
         break
