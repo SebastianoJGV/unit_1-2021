@@ -44,6 +44,10 @@ CPU Turn Function Flow Diagram
 
 ![](export_canvas_cpu-command-selection-210922_2204.png)
 
+Caesar Encoder
+
+![](caesarEncoder.png)
+
 Figure 2.
 Fig. 2 is a flow diagram depicting the method behind the cpu automatically choosing commands.
 ## Record of Tasks
