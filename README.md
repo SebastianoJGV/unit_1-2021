@@ -47,8 +47,8 @@ CPU Turn Function Flow Diagram
 Figure 2.
 Fig. 2 is a flow diagram depicting the method behind the cpu automatically choosing commands.
 ## Record of Tasks
-| Task No | Planned Action | Planned Outcome | Time estimate | Target completion date | Criterion |
-|---------|----------------|-----------------|---------------|------------------------|-----------|
-|1| write out first system diagram, start second flowchart|Upload first system diagram|30 mins|September 24th|B|
-|         |                |                 |               |                        |           |
-|         |                |                 |               |                        |           |
+| Task No | Planned Action                                         | Planned Outcome             | Time estimate | Target completion date | Criterion |
+|---------|--------------------------------------------------------|-----------------------------|---------------|------------------------|-----------|
+| 1       | write out first system diagram, start second flowchart | Upload first system diagram | 30 mins       | September 24th         | B         |
+| 2       | Caesar Cypher encoder written out                      | Success                     | 30 mins       | October 5th            | B         |
+|         |                                                        |                             |               |                        |           |
