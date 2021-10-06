@@ -46,7 +46,7 @@ CPU Turn Function Flow Diagram
 
 Caesar Encoder
 
-![](caesarEncoder.png)
+![](caesar encoder.PNG)
 
 Figure 2.
 Fig. 2 is a flow diagram depicting the method behind the cpu automatically choosing commands.
