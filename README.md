@@ -51,8 +51,8 @@ Fig 3 is a Caesar Encoder function for database encoding
 ![](caesarEncoder.PNG)
 
 ## Record of Tasks
-| Task No | Planned Action                                         | Planned Outcome             | Time estimate | Target completion date | Criterion |
-|---------|--------------------------------------------------------|-----------------------------|---------------|------------------------|-----------|
-| 1       | write out first system diagram, start second flowchart | Upload first system diagram | 30 mins       | September 24th         | B         |
-| 2       | Caesar Cypher encoder written out                      | Success                     | 30 mins       | October 5th            | B         |
-|         |                                                        |                             |               |                        |           |
+| Task No | Planned Action                                         | Planned Outcome                                            | Time estimate | Target completion date | Criterion |
+|---------|--------------------------------------------------------|------------------------------------------------------------|---------------|------------------------|-----------|
+| 1       | write out first system diagram, start second flowchart | Upload first system diagram                                | 30 mins       | September 24th         | B         |
+| 2       | Caesar Cypher encoder written out                      | Success                                                    | 30 mins       | October 5th            | B         |
+| 3       | Database caesar cypher implementation                  | Database is in Caesar cypher, TODO// get database to work  | 20 mins       | October 5th            | B         |
