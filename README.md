@@ -40,13 +40,15 @@ As shown in **Fig. 1**, the solution will run on python and is developed using t
 ## UML Diagram
 
 ## Flow Diagrams
-CPU Turn Function Flow Diagram
+**Figure 2**
+Fig. 2 is a CPU Turn Function Flow Diagram
 
 ![](export_canvas_cpu-command-selection-210922_2204.png)
 
-Caesar Encoder
+**Figure 3**
+Fig 3 is a Caesar Encoder function for database encoding
 
-![](caesar encoder.PNG)
+![](caesarEncoder.PNG)
 
 Figure 2.
 Fig. 2 is a flow diagram depicting the method behind the cpu automatically choosing commands.
