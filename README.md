@@ -40,12 +40,12 @@ As shown in **Fig. 1**, the solution will run on python and is developed using t
 ## UML Diagram
 
 ## Flow Diagrams
-**Figure 2**/n
+**Figure 2**
 Fig. 2 is a CPU Turn Function Flow Diagram
 
 ![](export_canvas_cpu-command-selection-210922_2204.png)
 
-**Figure 3**/n
+**Figure 3**
 Fig 3 is a Caesar Encoder function for database encoding
 
 ![](caesarEncoder.PNG)
