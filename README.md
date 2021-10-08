@@ -50,6 +50,11 @@ Fig 3 is a Caesar Encoder function for database encoding
 
 ![](caesarEncoder.PNG)
 
+**Figure 4**
+Fig 4 is the function that itterates a battle:
+
+![](battleDigram.png)
+
 ## Record of Tasks
 | Task No | Planned Action                                         | Planned Outcome                                            | Time estimate | Target completion date | Criterion |
 |---------|--------------------------------------------------------|------------------------------------------------------------|---------------|------------------------|-----------|
