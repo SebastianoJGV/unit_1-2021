@@ -53,7 +53,7 @@ Fig 3 is a Caesar Encoder function for database encoding
 **Figure 4**
 Fig 4 is the function that itterates a battle:
 
-![](battleDigram.png)
+![](battleDiagram.png)
 
 ## Record of Tasks
 | Task No | Planned Action                                         | Planned Outcome                                            | Time estimate | Target completion date | Criterion |
