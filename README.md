@@ -56,10 +56,13 @@ Fig 4 is the function that itterates a battle:
 ![](BattleDiagram.png)
 
 ## Record of Tasks
-| Task No | Planned Action                                         | Planned Outcome                                            | Time estimate | Target completion date | Criterion |
-|---------|--------------------------------------------------------|------------------------------------------------------------|---------------|------------------------|-----------|
-| 1       | write out first system diagram, start second flowchart | Upload first system diagram                                | 30 mins       | September 24th         | B         |
-| 2       | Caesar Cypher encoder written out                      | Success                                                    | 30 mins       | October 5th            | C         |
-| 3       | Database caesar cypher implementation                  | Database is in Caesar cypher, TODO// get database to work  | 20 mins       | October 5th            | C         |
-| 4       | Battle function flow chart                             | Completed                                                  | 10 mins       | October 7th            | B         |
-| 5       | Fixed Battle Function chart                            | Fixed Loop                                                 | 10 Mins       | October 22nd           | B         |
+| Task No | Planned Action                                         | Planned Outcome                                                                       | Time estimate | Target completion date | Criterion |
+|---------|--------------------------------------------------------|---------------------------------------------------------------------------------------|---------------|------------------------|-----------|
+| 1       | Work on CPU Action                                     | Fix formatting, start theorizing how to calculate CPU actions                         | 2 Hours       | September 19th         | C         |
+| 2       | Finish CPU Implementation, consider something else?    | Decided on inclusion of music or ascii images, finish CPU if else ladder              | 2 Hours       | September 20th         | C         |
+| 3       | Comments and playtesting                               | Fill out comment descriptions for every function and if statements that are not clear | 1.5 Hours     | September 21st         | C         |
+| 4       | write out first system diagram, start second flowchart | Upload first system diagram                                                           | 30 mins       | September 24th         | B         |
+| 5       | Caesar Cypher encoder written out                      | Success                                                                               | 30 mins       | October 5th            | C         |
+| 6       | Database caesar cypher implementation                  | Database is in Caesar cypher, TODO// get database to work                             | 20 mins       | October 5th            | C         |
+| 7       | Battle function flow chart                             | Completed                                                                             | 10 mins       | October 7th            | B         |
+| 8       | Fixed Battle Function chart                            | Fixed Loop                                                                            | 10 Mins       | October 22nd           | B         |
