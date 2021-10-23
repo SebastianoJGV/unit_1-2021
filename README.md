@@ -39,19 +39,24 @@ As shown in **Fig. 1**, the solution will run on python and is developed using t
 
 ## UML Diagram
 
+**Figure 2.** UML Diagram for the player class
+![](playerUML.png)
+As shown in **Figure 2**, this is a UML diagram depicting my class 'player' that is used, along with the attributes associated with the class used.
+
 ## Flow Diagrams
-**Figure 2**
-Fig. 2 is a CPU Turn Function Flow Diagram
+**Figure 3**
+Fig. 3 is a CPU Turn Function Flow Diagram, this depicts the method through which the CPU decided which move to use, based off of what element the CPU attribute is.
 
 ![](export_canvas_cpu-command-selection-210922_2204.png)
 
-**Figure 3**
-Fig 3 is a Caesar Encoder function for database encoding
+
+**Figure 4**
+Fig 4 is a Caesar Encoder function for database encoding
 
 ![](caesarEncoder.PNG)
 
-**Figure 4**
-Fig 4 is the function that itterates a battle:
+**Figure 5**
+Fig 5 is the function that itterates a battle until either side has lost:
 
 ![](BattleDiagram.png)
 
