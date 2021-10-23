@@ -23,8 +23,8 @@ I will design and make a text based game for Mr. Ruben Pinzon. The game will be 
 1. The game has to be entirely text-based.
 2. The game must record the time played.
 3. The game must record the player name and score.
-4. Run with at least the "perfect triangle" of elements and choice of what element to play as. (Fire, Water, Grass)
-5. CPU integration
+4. Have the option of the three basic elements: fire, water, and grass, along with unique movesets for each element
+5. Option for PvP or PvCPU
 6. Database integration for numerous save states
 
 # Criteria B: Design
