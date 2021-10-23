@@ -6,17 +6,30 @@
 import time
 import sys
 import random
-from PokemonGame import pokeLibrary
+import unittest
 
-
-
+global winner
+global p1score
+global p2score
 winner = 0
-p1score=0
-p2score=0
-#import playsound
-#playsound('audio.mp3')
+p1score = 0
+p2score = 0
+
 #Variable with start time
 start_time = time.ctime()
+
+def caesarEncoder(s:int, message:str):
+    encodedMessage = ' '
+    for i in range(len(message)):
+        letter = message[i]
+        letter_code = ord(letter)
+        shiftedCode = letter_code+s
+        #If we go beyond "z" we return to a for a proper caesar cypher
+        if shiftedCode > 122:
+            shiftedCode = letter_code+s-26
+        encodedMessage += chr(shiftedCode)
+    return encodedMessage
+
 
 def delay_print(s):
     # print one character at a time
@@ -105,7 +118,7 @@ class player:
 
 #CPU turn calculation, check element and randomize to select attack
 def cpu_turn():
-    delay_print("It is the CPU's turn! It has " + str(player2.hp) + " left. ")
+    delay_print("It is the CPU's turn! It has " + str(player2.hp) + " health left. ")
     rand_choice = random.randint(0, 2)#random number used for move calculation
     cpu_command = " "
     #Check Element, randomize between the 3 moves in each element
@@ -194,6 +207,7 @@ def battle():
 
 
 def player1_turn():
+
     delay_print(str(player1.name) +  ", it is your turn! Choose an attack! ")
     delay_print(str(player1.name) + " has " + str(player1.hp) +  " health left. ")
     delay_print("your pokemon knows: " + str(player1.moves))
@@ -331,7 +345,7 @@ while True:
     exist = True    
     with open ("database.txt", "w") as files:
         line = f"{player1}, {p1score}, {p2score}"
-        files.write(line)
+        files.write(caesarEncoder(5, line))
     
     #read database. r makes it read only
         with open("database.txt", "r") as files:
@@ -351,7 +365,6 @@ while True:
     delay_print("Match went from " + str(start_time) + " to " + str(end_time) + " \n")
     delay_print(str(player1.name)+" : " + str(p1score)+ "\n")
     delay_print(str(player2.name)+" : " + str(p2score)+ "\n")
-    
     yn = input("Do you want to play again? y/n")
     if yn[0] == "n":
         break
@@ -359,4 +372,3 @@ while True:
         delay_print("Restarting game! \n")
 delay_print("Thank you for playing.")
 
-    
