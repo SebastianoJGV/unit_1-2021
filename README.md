@@ -51,9 +51,9 @@ Fig. 3 is a CPU Turn Function Flow Diagram, this depicts the method through whic
 
 
 **Figure 4**
-Fig 4 is a Caesar Encoder function for database encoding
+Fig 4 is a portion of code that sets up the game, namely by creating player objects based off the user inputs and game type.
 
-![](caesarEncoder.PNG)
+![](setupchart.png)
 
 **Figure 5**
 Fig 5 is the function that itterates a battle until either side has lost:
