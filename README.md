@@ -71,3 +71,4 @@ Fig 5 is the function that itterates a battle until either side has lost:
 | 6 | Database caesar cypher implementation | Database is in Caesar cypher, TODO// get database to work  | 20 mins | October 5th | C |
 | 7 | Battle function flow chart | Completed | 10 mins | October 7th | B |
 | 8 | Fixed Battle Function chart | Fixed Loop | 10 Mins | October 22nd | B |
+| 9 | Make flowchart diagram for game setup | Finish flowchart and add to repo | 30mins | October 23rd | B |
