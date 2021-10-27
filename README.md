@@ -60,6 +60,15 @@ Fig 5 is the function that itterates a battle until either side has lost. This i
 ![](BattleDiagram.png)
 
 ##Setup Input Unit Testing
+| Questions Asked | Input | Expected Output(s) | Recieved Output(s) |
+|---|---|---|---|
+| Choose game type: (PvP or PvCPU) | PvP | Player 1, input your name | Player 1, input your name |
+| Choose game type: (PvP or PvCPU | p | Enter game type again: (PvP or PvCPU) | Enter game type again: (PvP or PvCPU) |
+| choose a type out of fire, grass, or water | fire | Player 2, input your name | Player 2, input your name |
+| choose a type out of fire, grass, or water: | f | enter a type correctly, options are fire, grass, or water: | enter a type correctly, options are fire, grass, or water: |
+| Player 2, input your name | Seb | Choose a type out of fire, grass, or water | Choose a type out of fire, grass, or water |
+
+##Battle Unit Testing
 
 
 ## Record of Tasks
