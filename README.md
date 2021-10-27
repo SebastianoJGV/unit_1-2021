@@ -15,9 +15,7 @@ Apart for this requirements, the owner is open to any type of game, topic or gen
 
 ## Proposed Solution
 
-I am going to create a Pokemon based text game, this will allow you to play against a freind on the same PC or against a CPU using the 3 base pokemon types of fire, water, and grass.
-
-I will design and make a text based game for Mr. Ruben Pinzon. The game will be about pokemon and is constructed using the software python, running on the eclipse pydev IDE. It will take 2 weeks to make and will be evaluated according to the criteria shown below.
+I am going to create a Pokemon based text game, this will allow you to play against a friend on the same PC or against a CPU using the 3 base pokemon types of fire, water, and grass. The game will be produced using Python Version 3.9, and will run through a python console.
 
 ## Success Criteria
 1. The game has to be entirely text-based.
@@ -45,18 +43,18 @@ As shown in **Figure 2**, this is a UML diagram depicting my class 'player' that
 
 ## Flow Diagrams
 **Figure 3**
-Fig. 3 is a CPU Turn Function Flow Diagram, this depicts the method through which the CPU decided which move to use, based off of what element the CPU attribute is.
+Fig. 3 is a CPU Turn Function Flow Diagram, this depicts the method through which the CPU decided which move to use, based off of what element the CPU attribute is. This is done through a random number generator, then an if statement checks which element the CPU is attributed to, after which is uses the corresponding move based off the random number generated.
 
 ![](export_canvas_cpu-command-selection-210922_2204.png)
 
 
 **Figure 4**
-Fig 4 is a portion of code that sets up the game, namely by creating player objects based off the user inputs and game type.
+Fig 4 is a portion of code that sets up the game, namely by creating player objects based off the user inputs and game type. It starts off by asking for player 1s name, and whether or not they will dod PvP which is to play with the person next to you, or PvCPU. It then asks for the pokemon type player 1 wants, after which it creates a object from the player class, using the name and element entered above. This is repeated for player 2 if the game type is PvP, or if the game type is PvCPU it uses a random number to assign a element to the CPU, which is another instance of the player class.
 
 ![](setupchart.png)
 
 **Figure 5**
-Fig 5 is the function that itterates a battle until either side has lost:
+Fig 5 is the function that itterates a battle until either side has lost. This is done with a while loop, only breaking out of the loop once either player reaches 0 HP 
 
 ![](BattleDiagram.png)
 
