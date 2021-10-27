@@ -1,7 +1,8 @@
-#Description : Text based pokemon game with 3 base types of fire water and grass
-#Date : 2021-08-16 - today
-#Author : Sebastiano GV
-#
+'''
+Description : Text based pokemon game with 3 base types of fire water and grass
+Date : 2021-08-16 - today
+Author : Sebastiano GV
+'''
 
 import time
 import sys
@@ -19,6 +20,10 @@ p2score = 0
 start_time = time.ctime()
 
 def caesarEncoder(s:int, message:str):
+    '''
+    @param s: the amount by which we shift the code
+    @param message: message to be encoded  
+    '''
     encodedMessage = ' '
     for i in range(len(message)):
         letter = message[i]
@@ -32,8 +37,11 @@ def caesarEncoder(s:int, message:str):
 
 
 def delay_print(s):
-    # print one character at a time
-    # https://stackoverflow.com/questions/9246076/how-to-print-one-character-at-a-time-on-one-line
+    '''
+    @param s: speed at which the text is written out 
+    print one character at a time
+    https://stackoverflow.com/questions/9246076/how-to-print-one-character-at-a-time-on-one-line
+    '''
     for c in s:
         sys.stdout.write(c)
         sys.stdout.flush()
@@ -42,6 +50,10 @@ def delay_print(s):
     
 class player:
     def __init__(self, name, element):
+        '''
+        @param name:The name assigned to the player
+        @param element: the element used, this determines moveset, strengths, and weaknesses
+        '''
         self.name = name
         self.element = element
         self.hp = 500
@@ -116,8 +128,10 @@ class player:
                 }           
 
 
-#CPU turn calculation, check element and randomize to select attack
 def cpu_turn():
+    '''
+    CPU turn calculation, this checks element and uses a random number to select an attack
+    '''
     delay_print("It is the CPU's turn! It has " + str(player2.hp) + " health left. ")
     rand_choice = random.randint(0, 2)#random number used for move calculation
     cpu_command = " "
@@ -180,9 +194,12 @@ def cpu_turn():
 
     
 
-#Function battle checks if someone has lost, and alternates between players
-# or between players and the cpu
+#
 def battle():
+    '''
+    Function checks if someone has lost, and alternates turns between players
+    or between players and the cpu if game type is pvcpu
+    '''
     while True:
         player1_turn()
         if player2.hp <= 0:
@@ -207,7 +224,9 @@ def battle():
 
 
 def player1_turn():
-
+    '''
+    goes through a players turn, allowing for choice of move
+    '''
     delay_print(str(player1.name) +  ", it is your turn! Choose an attack! ")
     delay_print(str(player1.name) + " has " + str(player1.hp) +  " health left. ")
     delay_print("your pokemon knows: " + str(player1.moves))
@@ -252,6 +271,9 @@ def player1_turn():
    
         
 def player2_turn():
+    '''
+    repeats what was done for player 1, except for player 2, CPU uses this as well if game type is PvCPU
+    '''
     delay_print(str(player2.name) + ", it is your turn! Choose an attack! ")
     delay_print(str(player2.name) + " has " + str(player2.hp) + " health left. ")
     delay_print("your pokemon knows " + str(player2.moves))
@@ -296,7 +318,12 @@ def player2_turn():
 #Bit intimidating, but it just asks for parameters       
 while True:
     delay_print("Welcome to Pokemon text edition. ")
-    game_type = input("Choose game type: (PvP or PvCPU)").lower()#code works with lowercase letters only
+    while True:
+        game_type = input("Choose game type: (PvP or PvCPU)").lower()#code works with lowercase letters only
+        if game_type == "pvp" or "pvcpu":
+            break
+        else:
+            gametype =input("Enter game type again: (PvP or PvCPU)").lower()
     player_name = input("Player 1, input your name: ")
     
     while True:#select type, this decided moves, strengths, etc
