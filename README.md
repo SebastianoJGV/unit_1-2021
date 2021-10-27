@@ -70,8 +70,10 @@ Fig 5 is the function that itterates a battle until either side has lost. This i
 
 ## Battle Unit Testing
 
+
 ## Non Functional Testing
-Through MVP beta testing by Dr. Ruben Pinzon, a bug was pointed out in the introduction where the game type input is not verified. Bug was fixed after.
+
+Through MVP beta testing by Dr. Ruben Pinzon, a bug was pointed out in the introduction where the game type input is not verified. Bug was fixed after feedback was sent through. 
 
 ## Record of Tasks
 | Task No | Planned Action | Planned Outcome | Time estimate | Target completion date | Criterion |
