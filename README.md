@@ -59,6 +59,9 @@ Fig 5 is the function that itterates a battle until either side has lost. This i
 
 ![](BattleDiagram.png)
 
+##Setup Input Unit Testing
+
+
 ## Record of Tasks
 | Task No | Planned Action | Planned Outcome | Time estimate | Target completion date | Criterion |
 |---|---|---|---|---|---|
