@@ -33,13 +33,14 @@ I am going to create a Pokemon based text game, this will allow you to play agai
 
 **Figure 1.** System Diagram for proposed text game
 
-As shown in **Fig. 1**, the solution will run on python and is developed using the Eclipse IDE. The code it designed on windows but can run on a mac computer with python 3.0 installed as well.
+As shown in **Fig. 1**, the solution will run on python and is developed using the Eclipse IDE. The code it designed on windows but can run on mac or linux os systems using a python 3.9 console.
 
 ## UML Diagram
 
 **Figure 2.** UML Diagram for the player class
 ![](playerUML.png)
-As shown in **Figure 2**, this is a UML diagram depicting my class 'player' that is used, along with the attributes associated with the class used.
+
+As shown in **Figure 2**, this is a UML diagram depicting my class 'player' that is used, along with the attributes associated with the class used. The class has no functions directly connected to it, but does use a few attributes, specifically it uses: Name, the name of the player, element, the element used by the player, hp, which is the amount of health left, acc_amt, which is the amount of times you can use each attack, weakness, element to which the player object is weak to, strong, which is the element to which the player is strong to, and moves, which is a list containing all possible moves based off of our element attribute.
 
 ## Flow Diagrams
 **Figure 3**
@@ -70,3 +71,4 @@ Fig 5 is the function that itterates a battle until either side has lost. This i
 | 7 | Battle function flow chart | Completed | 10 mins | October 7th | B |
 | 8 | Fixed Battle Function chart | Fixed Loop | 10 Mins | October 22nd | B |
 | 9 | Make flowchart diagram for game setup | Finish flowchart and add to repo | 30mins | October 23rd | B |
+| 10 | Proofread and explain flow diagrams in more detail | Finish all flowchart descriptions | 1 Hour | October 26th | B |
