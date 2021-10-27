@@ -70,6 +70,15 @@ Fig 5 is the function that itterates a battle until either side has lost. This i
 
 ## Battle Unit Testing
 
+Each element, and its interaction with other elements, was tested, along with the interactions between moves of differing elements. 
+
+|  | Amount of tests | Expected Hits | Actual Hits |
+|---|---|---|---|
+| Ember | 12 | 12 | 11 |
+| Fire Punch | 12 | 10 | 9 |
+| Inferno | 12 | 8 | 7 |
+
+The table above shows testing of accuracy, all accuracy amounts were within acceptable ranges.
 
 ## Non Functional Testing
 
